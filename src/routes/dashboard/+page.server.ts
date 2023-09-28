@@ -4,6 +4,10 @@ import { fail, type Actions } from '@sveltejs/kit';
 import { ZodError } from 'zod';
 import { requireUserId } from '../../utils/auth';
 
+export const load = ({ locals }) => {
+	requireUserId(false, locals.user);
+};
+
 export const actions = {
 	default: async ({ request, locals }) => {
 		const data = await request.formData();
