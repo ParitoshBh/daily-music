@@ -1,12 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
-// import config from 'config';
 import type { Database } from "./schema";
-// import type { DatabaseConfig } from "../../../types/config";
+import { SUPABASE_URL, SUPABASE_KEY } from '$env/static/private';
 
-// const dbConfig = config.get<DatabaseConfig>('database');
-
-// export const supabase = createClient<Database>(dbConfig.supabaseUrl, dbConfig.supabaseKey);
-export const supabase = createClient<Database>(
-    process.env.SUPABASE_URL,
-    process.env.SUPABASE_KEY
-);
+export const supabase = createClient<Database>(SUPABASE_URL, SUPABASE_KEY);
