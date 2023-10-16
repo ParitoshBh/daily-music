@@ -14,7 +14,8 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
 		"typecheck": "tsc",
-		"test:coverage": "vitest run --coverage"
+		"test:coverage": "vitest run --coverage",
+		"supabase:gen-types": "npx --yes supabase gen types typescript --project-id <PROJECT_ID> > src/lib/server/database/schema.ts"
 	},
 	"dependencies": {
 		"@floating-ui/dom": "^1.4.5",
