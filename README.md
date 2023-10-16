@@ -12,6 +12,10 @@ This application allows you to create unique forms (using api call) that can the
 
 ## Development
 
+Development of this repository has been configured to use Visual Studio Code and Docker. In order to start developing, open the repository in [Visual Studio Code](https://code.visualstudio.com/). Doing so will prompt you to open the project in dev container. Once you do so, everything will be setup for your.
+
+Alternatively, the same setup can also be achieved using Github Codespaces (available through Github website).
+
 ### Running Locally
 
 1. Export supabase key environment variable by running - `export SUPABASE_KEY=<YOUR_KEY>`.
