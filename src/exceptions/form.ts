@@ -1,4 +1,4 @@
-export class UserNotFoundException extends Error {
+export class FormCreationFailedException extends Error {
 	constructor(message: string) {
 		super(message);
 
@@ -10,7 +10,7 @@ export class UserNotFoundException extends Error {
 	}
 }
 
-export class UserNotAllowedException extends Error {
+export class InvalidFormException extends Error {
 	constructor(message: string) {
 		super(message);
 
