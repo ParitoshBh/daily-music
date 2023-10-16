@@ -15,7 +15,9 @@
 				"Gruntfuggly.todo-tree",
 				"donjayamanne.githistory",
 				"svelte.svelte-vscode",
-				"eamodio.gitlens"
+				"eamodio.gitlens",
+				"DavidAnson.vscode-markdownlint",
+				"yzhang.markdown-all-in-one"
 			]
 		}
 	},
